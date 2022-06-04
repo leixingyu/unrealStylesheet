@@ -14,18 +14,20 @@
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>
 </div>
 
+<br>
+
 This side project is my personal attempt to make Qt application feels 
 more natural in Unreal Engine 5.
-The style sheet covers some of the most common used widget, and tries to
+The style sheet covers some of the most common used widgets, and tries to
 match the Unreal native UI as close as possible.
 
 If you feel there's anything missing, feel free to submit an issue or a PR.
 
-> Unreal has a different UI framework (Slate), future reads on comparing Qt to Slate [here](https://minimaleffort.tech/qt-to-slate-transition-guide/)
+> Unreal has a different UI framework (Slate), future [read](https://minimaleffort.tech/qt-to-slate-transition-guide/) on comparing Qt to Slate 
 
 ## Getting Started
 
-### Using the stylesheet
+### Using the style sheet
 
 1. Simply grab the style sheet file `ue.qss` and resource file `icons.rcc`
 
@@ -101,10 +103,10 @@ The following `.ui` files for testing can be found inside the `/ui` folder.
 
 ### Modifying the style sheet
 
-You can modify the `.qss` stylesheet directly, 
+You can modify the `.qss` style sheet directly, 
 
-Or you can modify on top of the
-css preprocessor `.scss` file.
+or you can modify on top of the
+_CSS_ preprocessor `.scss` file.
 Once finished, re-compile the `.qss` as follows:
 
 ```commandline
@@ -117,7 +119,7 @@ qtsass ue.scss -o ue.qss
 
 ### Modifying icons
 
-The icons are handled with Qt's resource system (to learn more visit: [here](https://doc.qt.io/qt-5/resources.html))
+The icons are handled with Qt's resource system (to learn more, visit [here](https://doc.qt.io/qt-5/resources.html))
 
 You can modify the `.qrc` file and re-compile the `.rcc` as follows:
 
