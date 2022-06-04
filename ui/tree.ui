@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>604</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tree</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::East</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideRight</enum>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Outliner</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item>
+         <widget class="QTreeWidget" name="treeWidget_2">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOn</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="indentation">
+           <number>20</number>
+          </property>
+          <property name="uniformRowHeights">
+           <bool>true</bool>
+          </property>
+          <property name="sortingEnabled">
+           <bool>true</bool>
+          </property>
+          <attribute name="headerDefaultSectionSize">
+           <number>300</number>
+          </attribute>
+          <attribute name="headerStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Item Label</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Type</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Minimal_Default (Editor)</string>
+           </property>
+           <property name="text">
+            <string>World</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>StaticMeshes</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Table</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Statue</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Floor</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Floor</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Chair</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Chair</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>SphereReflectionCapture</string>
+            </property>
+            <property name="text">
+             <string>SphereReflectionCapture</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SM_Lamp_Ceiling</string>
+            </property>
+            <property name="text">
+             <string>StaticMeshActor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SM_Counch</string>
+            </property>
+            <property name="text">
+             <string>StaticMeshActor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lights</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>SkyLight</string>
+             </property>
+             <property name="text">
+              <string>SkyLight</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Light Source</string>
+             </property>
+             <property name="text">
+              <string>DirectionalLight</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>GamePlayActors</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Player Start</string>
+             </property>
+             <property name="text">
+              <string>PlayerStart</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Audio</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Starter_Background_Cue</string>
+             </property>
+             <property name="text">
+              <string>AmbientSound</string>
+             </property>
+            </item>
+           </item>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Details</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item>
+         <widget class="QTreeWidget" name="treeWidget">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOn</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="indentation">
+           <number>20</number>
+          </property>
+          <property name="uniformRowHeights">
+           <bool>true</bool>
+          </property>
+          <property name="sortingEnabled">
+           <bool>true</bool>
+          </property>
+          <attribute name="headerDefaultSectionSize">
+           <number>300</number>
+          </attribute>
+          <attribute name="headerStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Item Label</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Type</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Minimal_Default (Editor)</string>
+           </property>
+           <property name="text">
+            <string>World</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>StaticMeshes</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Table</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Statue</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Floor</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Floor</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Chair</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Chair</string>
+             </property>
+             <property name="text">
+              <string>StaticMeshActor</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>SphereReflectionCapture</string>
+            </property>
+            <property name="text">
+             <string>SphereReflectionCapture</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SM_Lamp_Ceiling</string>
+            </property>
+            <property name="text">
+             <string>StaticMeshActor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SM_Counch</string>
+            </property>
+            <property name="text">
+             <string>StaticMeshActor</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Lights</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>SkyLight</string>
+             </property>
+             <property name="text">
+              <string>SkyLight</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Light Source</string>
+             </property>
+             <property name="text">
+              <string>DirectionalLight</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>GamePlayActors</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Player Start</string>
+             </property>
+             <property name="text">
+              <string>PlayerStart</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Audio</string>
+            </property>
+            <property name="text">
+             <string>Folder</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Starter_Background_Cue</string>
+             </property>
+             <property name="text">
+              <string>AmbientSound</string>
+             </property>
+            </item>
+           </item>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>604</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
