@@ -1,8 +1,6 @@
 # Unreal Style Sheet
  A Qt style sheet designed to make your tools look native in Unreal Engine 5  
 
-## About The Project
-
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
 
 ## Getting Started
