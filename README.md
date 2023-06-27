@@ -3,8 +3,20 @@
 
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
 
+## Installation
+PIP install the [latest release](https://pypi.org/project/unreal-qt-stylesheet/) from PYPi (recommended):
+```
+python -m pip install unreal-qt-stylesheet
+```
+or install from the repo:
+```
+python -m pip install git+https://github.com/hannesdelbeke/unrealStylesheet
+```
+
 ## Using the stylesheet
-simply import `unreal_qt_stylesheet` and call `setup()`:  
+
+Simply import `unreal_qt_stylesheet` and call `setup()`:  
+
 ```python
 # ensure you have a Qt application:
 # app = QtWidgets.QApplication(sys.argv)
