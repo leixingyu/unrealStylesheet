@@ -5,9 +5,6 @@
 
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
 
-This stylesheet covers most common used widgets, matching Unreal's UI as close as possible.  
-If anything missing, feel free to submit an issue or a PR.  
-
 ## Getting Started
 
 ### Using the style sheet
