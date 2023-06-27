@@ -28,77 +28,35 @@ If you feel there's anything missing, feel free to submit an issue or a PR.
 ## Getting Started
 
 ### Using the style sheet
+simply import `unreal_qt_stylesheet` and call `setup()`:
+```python
+# ensure you have a Qt application:
+# app = QtWidgets.QApplication(sys.argv)
 
-1. Simply grab the style sheet file `ue.qss` and resource file `icons.rcc`
+import unreal_qt_stylesheet
+unreal_qt_stylesheet.setup()
 
-
-2. Launch your Qt application and link the files
-
-   ```python
-   if __name__ == '__main__':
-       app = QtWidgets.QApplication(sys.argv)
-   
-       QtCore.QResource.registerResource("PATH_TO_ICONS.RCC")
-   
-       with open("PATH_TO_UE.QSS", 'r') as f:
-           qss = f.read()
-           app.setStyleSheet(qss)
-   
-       window = YourTool()
-       window.show()
-   
-       sys.exit(app.exec_())
-
-   ```
+# show your qt widgets
+# window = YourTool()
+# window.show()
+```
 
 ### Comparison
 
 The following `.ui` files for testing can be found inside the `/ui` folder.
 
-<table>
-   <tr>
-      <td>
-         <p>default (editor.ui)</p>
-         <img src="https://i.imgur.com/EX5naMy.png" alt="editor-qt"/>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <p>ue.qss</p>
-         <img src="https://i.imgur.com/M8CU4cN.jpg" alt="editor-ue"/>
-      </td>
-   </tr>
-</table>
+|default (editor.ui)| ue.qss|
+|---|---|
+|![](https://i.imgur.com/EX5naMy.png)| ![](https://i.imgur.com/M8CU4cN.jpg)|
 
-<table>
-   <tr>
-      <td>
-         <p>default (tree.ui)</p>
-         <img src="https://i.imgur.com/Xk8XYlQ.png" alt="tree-qt"/>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <p>ue.qss</p>
-         <img src="https://i.imgur.com/DcQQwak.jpg" alt="tree-ue"/>
-      </td>
-   </tr>
-</table>
+|default (tree.ui)|ue.qss |
+|---|---|
+|![](https://i.imgur.com/Xk8XYlQ.png)|![](https://i.imgur.com/DcQQwak.jpg) |
 
-<table>
-   <tr>
-      <td>
-         <p>default (progress.ui)</p>
-         <img src="https://i.imgur.com/6yMuCKD.png" alt="progress-qt"/>
-      </td>
-   </tr>
-   <tr>
-      <td>
-         <p>ue.qss</p>
-         <img src="https://i.imgur.com/NyskX8m.jpg" alt="progress-ue"/>
-      </td>
-   </tr>
-</table>
+|default (progress.ui)| ue.qss|
+|---|---|
+|![](https://i.imgur.com/6yMuCKD.png)| ![](https://i.imgur.com/NyskX8m.jpg)|
+
 
 
 ### Modifying the style sheet

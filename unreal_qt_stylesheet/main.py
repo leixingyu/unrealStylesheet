@@ -34,7 +34,7 @@ MODULE_PATH = Path(os.path.abspath(__file__)).parent
 QSS_PATH = MODULE_PATH / 'ue.qss'
 
 
-def style_qapplication():
+def setup():
     """ Apply the Unreal dark stylesheet to the current QApplication """
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
     app = QtWidgets.QApplication.instance()
