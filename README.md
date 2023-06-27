@@ -1,9 +1,9 @@
-# Unreal Style Sheet
- A Qt style sheet designed to make your tools look native in Unreal Engine 5  
+# Unreal Stylesheet
+ A Qt stylesheet designed to make your tools look native in Unreal Engine 5  
 
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
 
-## Using the style sheet
+## Using the stylesheet
 simply import `unreal_qt_stylesheet` and call `setup()`:  
 ```python
 # ensure you have a Qt application:
