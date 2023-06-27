@@ -1,33 +1,17 @@
-<div align="center">
-<h1 align="center">Unreal Style Sheet</h1>
-
-  <p align="center">
-    A Qt style sheet designed to make your tools look native in Unreal Engine 5
-  </p>
-</div>
+# Unreal Style Sheet
+ A Qt style sheet designed to make your tools look native in Unreal Engine 5  
 
 ## About The Project
 
-<br>
+<img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
 
-<div align="center">
-<img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>
-</div>
-
-<br>
-
-This side project is my personal attempt to make Qt application feels 
-more natural in Unreal Engine 5.
-The style sheet covers some of the most common used widgets, and tries to
-match the Unreal native UI as close as possible.
-
-If you feel there's anything missing, feel free to submit an issue or a PR.
-
+This stylesheet covers most common used widgets, matching Unreal's UI as close as possible.  
+If anything missing, feel free to submit an issue or a PR.  
 
 ## Getting Started
 
 ### Using the style sheet
-simply import `unreal_qt_stylesheet` and call `setup()`:
+simply import `unreal_qt_stylesheet` and call `setup()`:  
 ```python
 # ensure you have a Qt application:
 # app = QtWidgets.QApplication(sys.argv)
@@ -42,7 +26,7 @@ unreal_qt_stylesheet.setup()
 
 ### Comparison
 
-The following `.ui` files for testing can be found inside the `/ui` folder.
+The following `.ui` files for testing can be found inside the `/ui` folder.  
 
 |default (editor.ui)| ue.qss|
 |---|---|
@@ -60,12 +44,9 @@ The following `.ui` files for testing can be found inside the `/ui` folder.
 
 ### Modifying the style sheet
 
-You can modify the `.qss` style sheet directly, 
-
-or you can modify on top of the
-_CSS_ preprocessor `.scss` file.
-Once finished, re-compile the `.qss` as follows:
-
+You can modify the `.qss` style sheet directly,  
+or you can modify on top of the _CSS_ preprocessor `.scss` file.  
+Once finished, re-compile the `.qss`:   
 ```commandline
 qtsass ue.scss -o ue.qss
 ```
