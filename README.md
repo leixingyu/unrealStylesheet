@@ -74,12 +74,10 @@ rcc -binary icons.qrc -o icons.rcc
 ```
 
 
-## Reference
-
-[Qt Documentation: Qt Style Sheets Examples](https://doc.qt.io/qt-5/stylesheet-examples.html)
-
-[Qt Documentation: Qt Style Sheets Reference](https://doc.qt.io/qt-5/stylesheet-reference.html)
-
-[Github: Qt-Material](https://github.com/UN-GCPDS/qt-material)
-
-> Unreal has a different UI framework (Slate), future [read](https://minimaleffort.tech/qt-to-slate-transition-guide/) on comparing Qt to Slate 
+## References
+- Qt documentation: 
+    - [stylesheets examples](https://doc.qt.io/qt-5/stylesheet-examples.html)
+    - [stylesheets reference](https://doc.qt.io/qt-5/stylesheet-reference.html)
+- Github repo: [Qt-Material](https://github.com/UN-GCPDS/qt-material)
+- Unreal has a different UI framework (Slate), future [read](https://minimaleffort.tech/qt-to-slate-transition-guide/) on comparing Qt to Slate
+- An example of this stylesheet in action: [unrealScriptEditor](https://github.com/leixingyu/unrealScriptEditor)
