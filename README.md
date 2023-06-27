@@ -3,9 +3,7 @@
 
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
 
-## Getting Started
-
-### Using the style sheet
+## Using the style sheet
 simply import `unreal_qt_stylesheet` and call `setup()`:  
 ```python
 # ensure you have a Qt application:
@@ -19,7 +17,7 @@ unreal_qt_stylesheet.setup()
 # window.show()
 ```
 
-### Comparison
+## Comparison
 
 The following `.ui` files for testing can be found inside the `/ui` folder.  
 
@@ -35,7 +33,10 @@ The following `.ui` files for testing can be found inside the `/ui` folder.
 |---|---|
 |![](https://i.imgur.com/6yMuCKD.png)| ![](https://i.imgur.com/NyskX8m.jpg)|
 
+## Contribute
 
+Feel free to make a PR or issue if you find a bug, or want to request a feature.  
+Some guidelines to modify this stylesheet:
 
 ### Modifying the style sheet
 
