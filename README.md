@@ -23,7 +23,6 @@ match the Unreal native UI as close as possible.
 
 If you feel there's anything missing, feel free to submit an issue or a PR.
 
-> Unreal has a different UI framework (Slate), future [read](https://minimaleffort.tech/qt-to-slate-transition-guide/) on comparing Qt to Slate 
 
 ## Getting Started
 
@@ -93,3 +92,5 @@ rcc -binary icons.qrc -o icons.rcc
 [Qt Documentation: Qt Style Sheets Reference](https://doc.qt.io/qt-5/stylesheet-reference.html)
 
 [Github: Qt-Material](https://github.com/UN-GCPDS/qt-material)
+
+> Unreal has a different UI framework (Slate), future [read](https://minimaleffort.tech/qt-to-slate-transition-guide/) on comparing Qt to Slate 
