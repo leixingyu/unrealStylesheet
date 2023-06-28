@@ -21,13 +21,11 @@ try:
 except ImportError:
     pass
 
-from pathlib import Path
 
-
-# MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
-# UI_PATH = os.path.join(MODULE_PATH, 'ui', 'progress.ui')
-MODULE_PATH = Path(os.path.abspath(__file__)).parent
-QSS_PATH = MODULE_PATH / 'ue.qss'
+MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
+UI_PATH = os.path.join(MODULE_PATH, 'ui', 'progress.ui')
+QSS_PATH = os.path.join(MODULE_PATH, 'ue.qss')
+ICONS_RCC = os.path.join(MODULE_PATH, 'icons.rcc')
 
 
 def setup():
@@ -36,7 +34,7 @@ def setup():
     """
     QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
     app = QtWidgets.QApplication.instance()
-    QtCore.QResource.registerResource(str(MODULE_PATH / "icons.rcc") )
+    QtCore.QResource.registerResource(ICONS_RCC)
     with open(QSS_PATH, 'r') as f:
         qss = f.read()
         app.setStyleSheet(qss)
