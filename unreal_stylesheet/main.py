@@ -23,7 +23,6 @@ except ImportError:
 
 
 MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
-UI_PATH = os.path.join(MODULE_PATH, 'ui', 'progress.ui')
 QSS_PATH = os.path.join(MODULE_PATH, 'ue.qss')
 ICONS_RCC = os.path.join(MODULE_PATH, 'icons.rcc')
 
