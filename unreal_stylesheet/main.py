@@ -2,11 +2,11 @@ import os
 from contextlib import suppress
 
 def import_qt_bindings():
-    """run this after creating a QApplication"""
-
-    # prevent importing the wrong Qt bindings 
-    # if the user has multiple Qt bindings installed
-    # search for the one with an active QApplication
+    """
+    Import the active Qt Bindings based on the active QApplication.
+    This prevents importing the wrong Qt bindings, 
+    if the user has multiple Qt bindings installed
+    """
     active_qapp = None
     QtWidgets = None
     QtCore = None
