@@ -31,7 +31,13 @@ def setup():
     """
     Apply the Unreal dark stylesheet to the current QApplication
     """
-    QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+    try:
+        # for PyQt5 & PySide2
+        QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
+    except AttributeError:
+        # enabled by default in PyQt6 & PySide6
+        pass
+
     app = QtWidgets.QApplication.instance()
     QtCore.QResource.registerResource(ICONS_RCC)
     with open(QSS_PATH, 'r') as f:
