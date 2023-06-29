@@ -16,14 +16,14 @@ python -m pip install git+https://github.com/hannesdelbeke/unrealStylesheet
 
 ## Using the stylesheet
 
-Simply import `unreal_qt_stylesheet` and call `setup()`:  
+Simply import `unreal_stylesheet` and call `setup()`:  
 
 ```python
 # ensure you have a Qt application:
 # app = QtWidgets.QApplication(sys.argv)
 
-import unreal_qt_stylesheet
-unreal_qt_stylesheet.setup()
+import unreal_stylesheet
+unreal_stylesheet.setup()
 
 # show your qt widgets
 # window = YourTool()

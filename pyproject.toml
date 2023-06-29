@@ -4,7 +4,7 @@ requires = ["setuptools", "setuptools-scm"]
 
 
 [tool.setuptools]
-packages = ["unreal_qt_stylesheet"]
+packages = ["unreal_stylesheet"]
 
 
 [project]
@@ -24,7 +24,7 @@ classifiers = [
 #dynamic = ["dependencies"]
 dependencies = ['importlib-metadata; python_version<"3.7"']
 #dynamic = ["version"]
-version = "0.0.1"
+version = "1.0.0"
 
 #[project.optional-dependencies]
 #yaml = ["pyyaml"]
