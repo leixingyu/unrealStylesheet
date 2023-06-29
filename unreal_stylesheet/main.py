@@ -1,25 +1,35 @@
 import os
+from contextlib import suppress
 
+def import_qt_bindings():
+    """run this after creating a QApplication"""
 
-try:
-    from PySide2 import QtWidgets, QtCore, QtGui
-except ImportError:
-    pass
-
-try:
-    from PyQt5 import QtWidgets, QtCore, QtGui
-except ImportError:
-    pass
-
-try:
-    from PySide6 import QtWidgets, QtCore, QtGui
-except ImportError:
-    pass
-
-try:
-    from PyQt6 import QtWidgets, QtCore, QtGui
-except ImportError:
-    pass
+    # prevent importing the wrong Qt bindings 
+    # if the user has multiple Qt bindings installed
+    # search for the one with an active QApplication
+    active_qapp = None
+    QtWidgets = None
+    QtCore = None
+    with suppress(ImportError):
+        from PySide2 import QtWidgets, QtCore
+        active_qapp = QtWidgets.QApplication.instance()
+        print (active_qapp)
+    if not active_qapp:
+        with suppress(ImportError):
+            from PyQt5 import QtWidgets, QtCore
+            active_qapp = QtWidgets.QApplication.instance()
+    if not active_qapp:
+        with suppress(ImportError):
+            from PySide6 import QtWidgets, QtCore
+            active_qapp = QtWidgets.QApplication.instance()
+    if not active_qapp:
+        with suppress(ImportError):
+            from PyQt6 import QtWidgets, QtCore
+            active_qapp = QtWidgets.QApplication.instance()
+        
+    # add them to global
+    globals()['QtWidgets'] = QtWidgets
+    globals()['QtCore'] = QtCore
 
 
 MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -31,6 +41,8 @@ def setup():
     """
     Apply the Unreal dark stylesheet to the current QApplication
     """
+    import_qt_bindings()
+
     try:
         # for PyQt5 & PySide2
         QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
