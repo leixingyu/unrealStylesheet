@@ -1,4 +1,4 @@
-# Unreal Stylesheet ![PyPI](https://img.shields.io/pypi/v/unreal_stylesheet?color=blue)
+# Unreal Stylesheet [![PyPI](https://img.shields.io/pypi/v/unreal_stylesheet?color=blue)](https://pypi.org/project/unreal-stylesheet/)
 
  A Qt stylesheet designed to make your tools look native in Unreal Engine 5  
 
