@@ -8,7 +8,7 @@ packages = ["unreal_stylesheet"]
 
 
 [project]
-name = "unreal-qt-stylesheet"
+name = "unreal-stylesheet"
 authors = [
     {name = "Xingyu Lei"},
     {name = "Hannes Delbeke"},
@@ -24,7 +24,7 @@ classifiers = [
 #dynamic = ["dependencies"]
 dependencies = ['importlib-metadata; python_version<"3.7"']
 #dynamic = ["version"]
-version = "1.0.0"
+version = "0.0.1"
 
 #[project.optional-dependencies]
 #yaml = ["pyyaml"]

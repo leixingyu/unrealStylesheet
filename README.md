@@ -1,13 +1,13 @@
-# Unreal Stylesheet ![PyPI](https://img.shields.io/pypi/v/unreal_qt_stylesheet?color=blue)
+# Unreal Stylesheet ![PyPI](https://img.shields.io/pypi/v/unreal_stylesheet?color=blue)
 
  A Qt stylesheet designed to make your tools look native in Unreal Engine 5  
 
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
 
 ## Installation
-PIP install the [latest release](https://pypi.org/project/unreal-qt-stylesheet/) from PYPi (recommended):
+PIP install the [latest release](https://pypi.org/project/unreal-stylesheet/) from PYPi (recommended):
 ```
-python -m pip install unreal-qt-stylesheet
+python -m pip install unreal-stylesheet
 ```
 or install from the repo:
 ```
