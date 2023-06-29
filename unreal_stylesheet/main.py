@@ -1,6 +1,12 @@
 import os
 from contextlib import suppress
 
+
+MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
+QSS_PATH = os.path.join(MODULE_PATH, 'ue.qss')
+ICONS_RCC = os.path.join(MODULE_PATH, 'icons.rcc')
+
+
 def import_qt_bindings():
     """
     Import the active Qt Bindings based on the active QApplication.
@@ -39,11 +45,6 @@ def import_qt_bindings():
     # add them to global
     globals()['QtWidgets'] = QtWidgets
     globals()['QtCore'] = QtCore
-
-
-MODULE_PATH = os.path.dirname(os.path.abspath(__file__))
-QSS_PATH = os.path.join(MODULE_PATH, 'ue.qss')
-ICONS_RCC = os.path.join(MODULE_PATH, 'icons.rcc')
 
 
 def setup():
