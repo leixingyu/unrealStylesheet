@@ -45,27 +45,26 @@ Some guidelines to modify this stylesheet:
 
 ### Modifying the style sheet
 
-You can modify the `.qss` style sheet directly,  
-or you can modify on top of the _CSS_ preprocessor `.scss` file.  
-Once finished, re-compile the `.qss`:   
+1. Modify the _CSS_ preprocessor `.scss` file
+2. Re-compile the `.qss`:   
 ```commandline
 qtsass ue.scss -o ue.qss
 ```
 
-> Documentation about .scss can be found: [Sass Official website](https://sass-lang.com/guide)
->
-> You'll also need to install a Qt specific Sass: [qt-sass](https://github.com/spyder-ide/qtsass)
+⚠️ If you modify the `.qss` style sheet directly, your changes will be lost when the `.qss` is re-compiled in the future  
+
+> Documentation about .scss can be found: [Sass Official website](https://sass-lang.com/guide)  
+> You'll also need to install a Qt specific Sass: [qt-sass](https://github.com/spyder-ide/qtsass)  
 
 ### Modifying icons
 
-The icons are handled with Qt's resource system (to learn more, visit [here](https://doc.qt.io/qt-5/resources.html))
+The icons are handled with Qt's resource system (see the [docs](https://doc.qt.io/qt-5/resources.html)) (which is dropped in qt6)
 
-You can modify the `.qrc` file and re-compile the `.rcc` as follows:
-
+1. Modify the `.qrc` file
+2. Re-compile the `.rcc` :
 ```commandline
 rcc -binary icons.qrc -o icons.rcc
 ```
-
 
 ## References
 - Qt documentation: 
