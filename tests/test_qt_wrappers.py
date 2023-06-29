@@ -22,7 +22,7 @@ def test_pyqt5(ui_path):
 
     app = QApplication.instance() or QApplication([])
     unreal_stylesheet.setup()
-    window = uic.loadUi(ui_path)
+    window = uic.loadUi(str(ui_path))
     window.show()
     QApplication.instance().exec_()
     return window
@@ -34,7 +34,6 @@ def test_pyside2(ui_path):
     from PySide2.QtCore import QFile
 
     app = QApplication.instance() or QApplication([])
-
     unreal_stylesheet.setup()
     loader = QtUiTools.QUiLoader()
     ui_file = QFile(str(ui_path))
@@ -45,4 +44,33 @@ def test_pyside2(ui_path):
     return window
 
 
-w = test_pyside2(EDITOR_UI)
+def test_pyside6(ui_path):
+    from PySide6.QtWidgets import QApplication
+    from PySide6 import QtUiTools
+    from PySide6.QtCore import QFile
+    app = QApplication.instance() or QApplication([])
+    
+    unreal_stylesheet.setup()
+    loader = QtUiTools.QUiLoader()
+    ui_file = QFile(str(ui_path))
+    ui_file.open(QFile.ReadOnly)  # Open the file in read-only mode
+    window = loader.load(ui_file)
+    ui_file.close()
+    window.show()
+    QApplication.instance().exec()
+    return window
+
+
+def test_pyqt6(ui_path):
+    from PyQt6.QtWidgets import QApplication
+    from PyQt6 import uic
+    app = QApplication.instance() or QApplication([])
+
+    unreal_stylesheet.setup()
+    window = uic.loadUi(str(ui_path))
+    window.show()
+    QApplication.instance().exec()
+    return window
+
+
+w = test_pyqt6(EDITOR_UI)
