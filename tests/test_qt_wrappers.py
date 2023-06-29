@@ -28,6 +28,21 @@ def test_pyqt5(ui_path):
     return window
 
 
+def test_pyside2(ui_path):
+    from PySide2.QtWidgets import QApplication
+    from PySide2 import QtUiTools
+    from PySide2.QtCore import QFile
+
+    app = QApplication.instance() or QApplication([])
+
+    unreal_stylesheet.setup()
+    loader = QtUiTools.QUiLoader()
+    ui_file = QFile(str(ui_path))
+    window = loader.load(ui_file)
+    ui_file.close()
+    window.show()
+    QApplication.instance().exec_()
+    return window
 
 
-w = test_pyqt5(EDITOR_UI)
+w = test_pyside2(EDITOR_UI)
