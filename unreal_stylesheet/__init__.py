@@ -1,1 +1,1 @@
-from unreal_qt_stylesheet.main import *
+from unreal_stylesheet.main import *
