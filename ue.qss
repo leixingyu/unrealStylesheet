@@ -86,6 +86,11 @@ QComboBox::down-arrow {
   QComboBox::down-arrow:hover {
     image: url(:/icons/arrow-down-white.svg); }
 
+QComboBox:disabled {
+    color: #8f8f8f;
+    background-color: #353535;
+    border-style: transparent; }
+
 QSpinBox::up-button,
 QDoubleSpinBox::up-button {
   image: url(:/icons/arrow-up.svg);
