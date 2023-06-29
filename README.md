@@ -11,7 +11,7 @@ python -m pip install unreal-stylesheet
 ```
 or install from the repo:
 ```
-python -m pip install git+https://github.com/hannesdelbeke/unrealStylesheet
+python -m pip install git+https://github.com/leixingyu/unrealStylesheet
 ```
 
 ## Using the stylesheet
