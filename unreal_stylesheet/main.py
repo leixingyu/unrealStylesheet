@@ -10,14 +10,6 @@ def import_qt_bindings():
     active_qapp = None
     QtWidgets = None
     QtCore = None
-    with suppress(ImportError):
-        from PySide2 import QtWidgets, QtCore
-        active_qapp = QtWidgets.QApplication.instance()
-        print (active_qapp)
-    if not active_qapp:
-        with suppress(ImportError):
-            from PyQt5 import QtWidgets, QtCore
-            active_qapp = QtWidgets.QApplication.instance()
     if not active_qapp:
         with suppress(ImportError):
             from PySide6 import QtWidgets, QtCore
@@ -25,6 +17,23 @@ def import_qt_bindings():
     if not active_qapp:
         with suppress(ImportError):
             from PyQt6 import QtWidgets, QtCore
+            active_qapp = QtWidgets.QApplication.instance()
+    if not active_qapp:
+        with suppress(ImportError):
+            from PySide2 import QtWidgets, QtCore
+            active_qapp = QtWidgets.QApplication.instance()
+            print (active_qapp)
+    if not active_qapp:
+        with suppress(ImportError):
+            from PyQt5 import QtWidgets, QtCore
+            active_qapp = QtWidgets.QApplication.instance()
+    if not active_qapp:
+        with suppress(ImportError):
+            from PySide import QtWidgets, QtCore
+            active_qapp = QtWidgets.QApplication.instance()
+    if not active_qapp:
+        with suppress(ImportError):
+            from PyQt4 import QtWidgets, QtCore
             active_qapp = QtWidgets.QApplication.instance()
         
     # add them to global

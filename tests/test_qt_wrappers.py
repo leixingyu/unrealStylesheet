@@ -73,4 +73,35 @@ def test_pyqt6(ui_path):
     return window
 
 
-w = test_pyqt6(EDITOR_UI)
+def test_pyqt4(ui_path):
+    # TODO this function is not tested, since PyQt4 is so ancient
+    from PyQt4.QtGui import QApplication
+    from PyQt4 import uic
+
+    app = QApplication.instance() or QApplication([])
+    unreal_stylesheet.setup()
+    window = uic.loadUi(str(ui_path))
+    window.show()
+    QApplication.instance().exec_()
+    return window
+
+
+def test_pyside(ui_path):
+    # TODO this function is not tested, since PySide is so ancient
+    from PySide.QtGui import QApplication
+    from PySide import QtUiTools
+    from PySide.QtCore import QFile
+
+    app = QApplication.instance() or QApplication([])
+    unreal_stylesheet.setup()
+    loader = QtUiTools.QUiLoader()
+    ui_file = QFile(str(ui_path))
+    ui_file.open(QFile.ReadOnly)  # Open the file in read-only mode
+    window = loader.load(ui_file)
+    ui_file.close()
+    window.show()
+    QApplication.instance().exec_()
+    return window
+
+
+w = test_pyside2(EDITOR_UI)
