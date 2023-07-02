@@ -10,7 +10,7 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
     # style your QApp, requires a QApplication instance
-    unreal_stylesheet.setup()  # <== Just 1 line of code to makes the magic happen
+    unreal_stylesheet.setup()  # <== Just 1 line of code to make the magic happen
 
     # create & show your Qt widget
     window = TestWindow()
