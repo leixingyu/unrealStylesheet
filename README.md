@@ -2,12 +2,20 @@
 
  A Qt stylesheet designed to make your tools look native in Unreal Engine 5  
 
+Quickstart sample code:
 ```python
-
 import unreal_stylesheet
-# app = QtWidgets.QApplication(sys.argv) # make your QApp
-unreal_stylesheet.setup()                # style your QApp, requires a QApplication instance
-# MyWidget().show()                      # show your Qt widget
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+
+    # style your QApp, requires a QApplication instance
+    unreal_stylesheet.setup()  # <== Just 1 line of code to makes the magic happen
+
+    # create & show your Qt widget
+    window = TestWindow()
+    window.show()
+    sys.exit(app.exec_())                   
 ```
 
 <img src="https://i.imgur.com/y7UP7k3.jpg" alt="main" width="100%"/>  
