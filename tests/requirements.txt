@@ -1,0 +1,7 @@
+PySide
+PySide2
+PySide6
+PyQt4
+PyQt5
+PyQt6
+unreal_stylesheet
