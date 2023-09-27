@@ -47,7 +47,7 @@ def import_qt_bindings():
     globals()['QtCore'] = QtCore
 
 
-def setup():
+def setup(app=None):
     """
     Apply the Unreal dark stylesheet to the current QApplication
     """
@@ -60,7 +60,7 @@ def setup():
         # enabled by default in PyQt6 & PySide6
         pass
 
-    app = QtWidgets.QApplication.instance()
+    app = app or QtWidgets.QApplication.instance()
     QtCore.QResource.registerResource(ICONS_RCC)
     with open(QSS_PATH, 'r') as f:
         qss = f.read()

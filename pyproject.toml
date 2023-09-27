@@ -24,7 +24,7 @@ classifiers = [
 #dynamic = ["dependencies"]
 dependencies = ['importlib-metadata; python_version<"3.7"']
 #dynamic = ["version"]
-version = "0.0.3"
+version = "0.0.4"
 
 #[project.optional-dependencies]
 #yaml = ["pyyaml"]
