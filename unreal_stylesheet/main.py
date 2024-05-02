@@ -54,14 +54,14 @@ def setup(app=None):
     import_qt_bindings()
 
     try:
-        # for PyQt5 & PySide2
+        # Enable High Dpi Scaling in PyQt5 & PySide2
         QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
     except AttributeError:
-        # enabled by default in PyQt6 & PySide6
-        pass
+        pass   # enabled by default in PyQt6 & PySide6
 
     app = app or QtWidgets.QApplication.instance()
     QtCore.QResource.registerResource(ICONS_RCC)
     with open(QSS_PATH, 'r') as f:
         qss = f.read()
+        app.setStyle("Fusion")  # dark title bar in Qt6
         app.setStyleSheet(qss)
