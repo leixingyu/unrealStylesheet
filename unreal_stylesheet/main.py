@@ -57,10 +57,7 @@ def setup(app=None):
     # In Qt6 (PyQt6, PySide6), this is enabled by default and the attribute is deprecated
     qt_version = QtCore.qVersion()
     if int(qt_version.split('.')[0]) < 6:
-        try:
             QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
-        except AttributeError:
-            pass
 
     app = app or QtWidgets.QApplication.instance()
     QtCore.QResource.registerResource(ICONS_RCC)
