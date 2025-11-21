@@ -53,11 +53,11 @@ def setup(app=None):
     """
     import_qt_bindings()
 
-    try:
-        # Enable High Dpi Scaling in PyQt5 & PySide2
-        QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
-    except AttributeError:
-        pass   # enabled by default in PyQt6 & PySide6
+    # Enable High Dpi Scaling only in Qt5 (PyQt5, PySide2, etc.)
+    # In Qt6 (PyQt6, PySide6), this is enabled by default and the attribute is deprecated
+    qt_version = QtCore.qVersion()
+    if int(qt_version.split('.')[0]) < 6:
+            QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
 
     app = app or QtWidgets.QApplication.instance()
     QtCore.QResource.registerResource(ICONS_RCC)
